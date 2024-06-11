@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Center</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+
+        .container {
+            width: 180%; 
+            max-width: 1500px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 48px;
+            border-radius: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .main-heading {
+            font-size: 3.6em;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+
+        .symptom-form {
+            margin-bottom: 36px;
+            padding: 36px;
+            border: 2.4px solid #00796b;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start; 
+            background-color: #000000;
+            width: 84%;
+            margin: 0 auto;
+        }
+
+        .symptom-form label {
+            margin-bottom: 12px;
+            font-size: 1.8em;
+            color: #ffffff;
+        }
+
+        .symptom-form input[type="text"] {
+            padding: 12px;
+            font-size: 1.44em;
+            border: 2.4px solid #00796b;
+            border-radius: 6px;
+            width: 100%;
+            margin-bottom: 18px;
+        }
+
+        .symptom-form button {
+            padding: 18px 24px;
+            font-size: 1.44em;
+            color: #ffffff;
+            background-color: #00796b;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; /* Full width */
+            align-self: center; /* Center the button within the form */
+        }
+
+        .symptom-form button:hover {
+            background-color: #004d40;
+        }
+
+        .result-heading {
+            font-size: 3em;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .button-container button {
+            padding: 18px 36px;
+            font-size: 1.8em;
+            border: none;
+            border-radius: 6px;
+            margin: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container .disease { background-color: #f44336; color: #ffffff; }
+        .button-container .description { background-color: #2196f3; color: #ffffff; }
+        .button-container .precaution { background-color: #ffeb3b; color: #000000; }
+        .button-container .medication { background-color: #4caf50; color: #ffffff; }
+        .button-container .workout { background-color: #ff9800; color: #ffffff; }
+        .button-container .diet { background-color: #9c27b0; color: #ffffff; }
+
+        .button-container button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Health Care Center</h1>
+        
+        <form class="symptom-form">
+            <label for="symptom">Type Symptom:</label>
+            <input type="text" id="symptom" name="symptom" placeholder="Type symptom such as itching, sleeping, aching, etc.">
+            <button type="submit" class="predict-button">Predict</button>
+        </form>
+        
+        <h2 class="result-heading">Our AI System Result</h2>
+        
+        <div class="button-container">
+            <button class="disease" onclick="window.location.href='#'">Disease</button>
+            <button class="description" onclick="window.location.href='#'">Description</button>
+            <button class="precaution" onclick="window.location.href='#'">Precaution</button>
+            <button class="medication" onclick="window.location.href='#'">Medication</button>
+            <button class="workout" onclick="window.location.href='#'">Workout</button>
+            <button class="diet" onclick="window.location.href='#'">Diet</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Buttons with Text</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('bloods.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    a.button {
+        display: inline-block;
+        padding: 30px 70px;
+        font-family: Arial, sans-serif;
+        font-size: 35px;
+        color: #ffffff;
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    a.button:hover {
+        background: linear-gradient(135deg, #ff4b2b, #ff416c);
+        transform: scale(1.1);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    }
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <a href="rbd.html" class="button">Give Blood</a>
+    <a href="reqblood.html" class="button">Request Blood</a>
+</div>
+</body>
+</html>

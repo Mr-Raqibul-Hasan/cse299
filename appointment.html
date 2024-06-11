@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, h1, label, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background: url('app.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding-left: 50px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        #appoinment {
+            background-color: rgb(135, 245, 237);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+        }
+
+        .head {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .head h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="appoinment.php" method="post"> 
+        <div id="appoinment">
+            <div class="head">
+                <h1>Book an Appointment</h1>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Name" name="name" required>
+                <input type="text" placeholder="Enter Number" name="number" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

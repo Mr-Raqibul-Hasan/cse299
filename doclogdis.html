@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 9px #999;
+        }
+        .btn:hover {background-color: #45a049}
+        .btn:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Records</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Client Name</th>
+                    <th>Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>2024-06-10</td>
+                    <td>10:00 AM</td>
+                    <td>John Doe</td>
+                    <td>Consultation</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>2024-06-11</td>
+                    <td>11:00 AM</td>
+                    <td>Jane Smith</td>
+                    <td>Therapy</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>2024-06-12</td>
+                    <td>02:00 PM</td>
+                    <td>Robert Brown</td>
+                    <td>Check-up</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>2024-06-13</td>
+                    <td>03:30 PM</td>
+                    <td>Emily Davis</td>
+                    <td>Follow-up</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#" class="btn">Add New Appointment</a>
+    </div>
+</body>
+</html>
